@@ -1,0 +1,226 @@
+/* You can add global styles to this file, and also import other style files */
+/* Variables globales */
+:root {
+    --title-color: #ff4900;
+    --paragraph-color1: #0093FF;
+    --paragraph-font1: Arial;
+    --paragraph-color2: #c500ff;
+    --paragraph-font2: 'Nerko One';
+    --link-color: #001bff;
+    --visited-link-color: #4CAF50;
+    --hover-link-color: #ff6600;
+    --header-bg-color: #000000;
+    --header-font-color: #ffffff;
+    --header-font-size: 1.5rem;
+    --row-bg-color1: #bec1c3;
+    --row-bg-color2: #045795;
+    --row-font-color: #ffffff;
+    --row-font-size: 1.5rem;
+    --ancho-div: 800px;
+    --top-header: 500px;
+    --logo-size: 40px;
+    --logo-bg-color: #ff0000;
+    --color-borde: #ccc;
+    --ancho-contenido: 550px;
+    --ancho-barra: 150px;
+    --ancho-footer: 740px;
+    --ancho-footers: 130px;
+  }
+  
+  /* Estilos globales */
+  h2 {
+    color: var(--title-color);
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: var(--paragraph-color1);
+    font-family: var(--paragraph-font1);
+  }
+  
+  p.secondary {
+    font-size: 12px;
+    color: var(--paragraph-color2);
+    font-family: var(--paragraph-font2);
+  }
+  
+  a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--visited-link-color);
+  }
+  
+  a:hover {
+    color: var(--hover-link-color);
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 40%;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: var(--header-bg-color);
+    color: var(--header-font-color);
+    font-size: var(--header-font-size);
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: var(--row-bg-color1);
+    color: black;
+    font-size: var(--row-font-size);
+  }
+  
+  tr:nth-child(odd) {
+    background-color: var(--row-bg-color2);
+    color: var(--row-font-color);
+    font-size: var(--row-font-size);
+  }
+
+
+  /* Contenedor principal */
+.contenedor {
+  width: var(--ancho-div);
+  height: 590px;
+  background-color: var(--row-bg-color2); 
+  position: relative;
+  border: 1px solid var(--header-bg-color); 
+}
+
+/* Encabezado */
+.header {
+  background-color: var(--row-bg-color1);
+  color: var(--header-font-color);
+  width: var(--ancho-div);
+  border: 1px solid var(--color-borde); 
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; 
+  box-sizing: border-box; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*logo*/
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  background-color: var(--logo-bg-color); 
+  padding: 10px; 
+  border-radius: 5px; 
+  border: 1px solid var(--header-bg-color);
+}
+.logo svg {
+  width: var(--logo-size); 
+  height: var(--logo-size); 
+}
+/*Buscador*/
+.buscador {
+  display: flex;
+  align-items: center;
+
+}
+.buscador input[type="text"] {
+  padding: 5px;
+  border: 1px solid var(--header-bg-color);
+  border-radius: 3px;
+  margin-right: 5px; 
+}
+.buscador button {
+  padding: 5px 10px;
+  background-color: var(--row-font-color);
+  color: var(--header-bg-color);
+  border: 1px solid var(--header-bg-color);
+  border-radius: 3px;
+  cursor: pointer; 
+}
+.header-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Contenido */
+.contenido {
+  position: absolute;
+  right: 30px;
+  top: 130px;
+  width: var(--ancho-contenido);
+  height: 280px;
+  background-color: var(--visited-link-color); 
+  border: 1px solid var(--header-bg-color); 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+.contenido p{
+  color: var(--color-borde);
+}
+/*Slide-Bar*/
+.slide-bar {
+  position: absolute;
+  top: 130px; 
+  left: 30px; 
+  width: var(--ancho-barra);
+  height: 280px; 
+  background-color: var(--paragraph-color1); 
+  border: 1px solid var(--header-bg-color); 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+.slide-bar p{
+  color: var(--color-borde);
+}
+/*Footers*/
+.footer{
+  position: relative;
+  top: 440px; 
+  width: var(--ancho-footer);
+  height: 120px;
+  left: 30px; 
+  background-color: var(--logo-bg-color ); 
+  border: 1px solid var(--header-bg-color); 
+  display: flex; 
+  align-items: center; 
+}
+.footer p{
+  padding: 10px;
+  color: var(--color-borde);
+}
+.footer-1, .footer-2, .footer-3 {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  height: 80px;
+  width: var(--ancho-footers); 
+  background-color: var(--row-bg-color1);
+  border: 1px solid var(--header-bg-color); 
+  top: 20px;
+}
+.footer-1 {
+  left: 110px; 
+}
+.footer-2 {
+  left: 310px;
+}
+.footer-3 {
+  right: 100px; 
+}
