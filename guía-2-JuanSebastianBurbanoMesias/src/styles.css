@@ -190,7 +190,7 @@
 }
 /*Footers*/
 .footer{
-  position: relative;
+  position: absolute;
   top: 440px; 
   width: var(--ancho-footer);
   height: 120px;
