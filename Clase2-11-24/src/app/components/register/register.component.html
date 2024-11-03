@@ -1,0 +1,30 @@
+<div class="p-fluid">
+    <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" pInputText formControlName="nombre" />
+        <small *ngIf="registroForm.controls['nombre'].touched && registroForm.controls['nombre'].invalid" class="p-error">El nombre es obligatorio</small>
+      </div>
+  
+      <div class="p-field">
+        <label for="email">Correo Electrónico</label>
+        <input id="email" type="email" pInputText formControlName="email" />
+        <small *ngIf="registroForm.controls['email'].touched && registroForm.controls['email'].invalid" class="p-error">Correo electrónico no válido</small>
+      </div>
+  
+      <div class="p-field">
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <p-calendar id="fechaNacimiento" formControlName="fechaNacimiento" dateFormat="dd/mm/yy"></p-calendar>
+        <small *ngIf="registroForm.controls['fechaNacimiento'].touched && registroForm.controls['fechaNacimiento'].invalid" class="p-error">La fecha de nacimiento es obligatoria</small>
+      </div>
+  
+      <div class="p-field">
+        <label for="genero">Género</label>
+        <p-dropdown id="genero" [options]="generos" formControlName="genero" placeholder="Seleccione un género"></p-dropdown>
+        <small *ngIf="registroForm.controls['genero'].touched && registroForm.controls['genero'].invalid" class="p-error">El género es obligatorio</small>
+      </div>
+  
+      <button pButton type="submit" label="Registrarse" [disabled]="registroForm.invalid"></button>
+    </form>
+  </div>
+  

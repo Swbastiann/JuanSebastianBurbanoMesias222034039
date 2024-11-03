@@ -1,0 +1,12 @@
+<form [formGroup]="checkboxForm" (ngSubmit)="onSubmit()">
+  <h3>Selecciona tus opciones:</h3>
+
+  <div *ngFor="let opcion of opciones">
+    <p-checkbox name="seleccion" [value]="opcion.value" [formControlName]="'seleccion'" inputId="{{opcion.value}}">
+    </p-checkbox>
+    <label [for]="opcion.value">{{opcion.label}}</label>
+  </div>
+
+
+  <button type="submit" pButton label="Enviar"></button>
+</form>

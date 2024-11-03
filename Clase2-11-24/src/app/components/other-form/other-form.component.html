@@ -1,0 +1,31 @@
+
+  <div class="p-fluid">
+    <form [formGroup]="otherForm" (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" pInputText formControlName="name" />
+        <div *ngIf="otherForm.controls['name'].invalid && otherForm.controls['name'].touched" class="error">
+          El nombre es requerido
+        </div>
+      </div>
+  
+      <div class="p-field">
+        <label for="birthdate">Fecha de nacimiento</label>
+        <p-calendar id="birthdate" formControlName="birthdate"></p-calendar>
+        <div *ngIf="otherForm.controls['birthdate'].invalid && otherForm.controls['birthdate'].touched" class="error">
+          La fecha de nacimiento es requerida
+        </div>
+      </div>
+  
+      <div class="p-field">
+        <label for="city">Ciudad</label>
+        <p-dropdown id="city" [options]="cities" formControlName="city"></p-dropdown>
+        <div *ngIf="otherForm.controls['city'].invalid && otherForm.controls['city'].touched" class="error">
+          Selecciona una ciudad
+        </div>
+      </div>
+  
+      <button pButton type="submit" label="Enviar"  [disabled]="otherForm.invalid" ></button>
+    </form>
+
+  

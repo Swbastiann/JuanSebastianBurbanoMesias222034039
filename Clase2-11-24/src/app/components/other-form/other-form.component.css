@@ -1,0 +1,14 @@
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .background {
+    background-image: url('/assets/images/fondo.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Para cubrir toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegúrate de que ocupe toda la altura de la pantalla */
+    width: 100vw; /* Asegúrate de que ocupe todo el ancho de la pantalla */
+}
