@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginTestComponent } from './components/login-test/login-test.component';
 import { OtherFormComponent } from './components/other-form/other-form.component';
 import { OtherFormCbComponent } from './components/other-form-cb/other-form-cb.component';
+import { MyregisterComponent } from './myregister/myregister.component';
 
 export const routes: Routes = [
 {
@@ -21,6 +22,12 @@ export const routes: Routes = [
     component: RegisterComponent
 
 },
+{
+
+    path: 'myregister',
+    component: MyregisterComponent
+
+},
 
 {
 
@@ -29,7 +36,7 @@ export const routes: Routes = [
 
 },
 {
- path:'logintest',
+ path:'loginTest',
  component: LoginTestComponent
 },
 {

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class LoginService {
 
   //Url del API almacenada de forma privada
-  apiUrl= "https://localhost:7200//api/Users";
+  apiUrl= "https://localhost:7200/api/Users";
 
   constructor(private http: HttpClient) { }
 
@@ -21,8 +21,13 @@ export class LoginService {
     const body = { username, password };
     //return this.http.post(this.apiUrl, {username, password});
 
-    return this.http.post('${this.apiUrl}/login', {username, password})
+    return this.http.post(`${this.apiUrl}/login`, {username, password}) // el /login es el metodo del EndPoint
 
   }
 
+  register(username: string, password: string):Observable<any> {
+    const body = { username, password };
+    return this.http.post(`${this.apiUrl}/register`, { username, password }) // el /register es el metodo del EndPoint
+  }
+    
 }
