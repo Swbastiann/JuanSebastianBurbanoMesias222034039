@@ -19,7 +19,7 @@ export class Form3Component {
     this.userForm = this.fb.group({    //metodo ()
       start: ['', Validators.required],    //coleccion[]
       end: ['', Validators.required],
-      note: ['', Validators.maxLength(300)],
+      note: ['', Validators.maxLength(200)],
     });
   }
 
