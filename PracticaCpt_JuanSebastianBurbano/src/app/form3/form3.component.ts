@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { FormBuilder,FormControlName,FormGroup,ReactiveFormsModule,Validators } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
+import { LoginService } from '../services/login.service';
+import {  HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-form3',
@@ -15,7 +17,7 @@ import { CalendarModule } from 'primeng/calendar';
 export class Form3Component {
   userForm: FormGroup;
 
-  constructor(private fb: FormBuilder){     //constructor {}
+  constructor(private fb: FormBuilder, private loginService:LoginService){     //constructor {}
     this.userForm = this.fb.group({    //metodo ()
       start: ['', Validators.required],    //coleccion[]
       end: ['', Validators.required],
@@ -23,11 +25,21 @@ export class Form3Component {
     });
   }
 
-  onSubmit(){
-    if(this.userForm.valid){
-      console.log(this.userForm.value);
-    }else{
-        console.log('Formulario invalido');
-      }
+
+  onSubmit() {
+    if (this.userForm.valid) {
+      const { start, end, note } = this.userForm.value;
+      this.loginService.loginForm3(start, end, note).subscribe(
+        (response) => {
+          console.log("Formulario 3 Exitoso:", response);
+          console.log("Formulario 3 enviado correctamente"); 
+        },
+        (error) => {
+          console.log("Error en formulario 3:", error);
+        }
+      );
+    } else {
+      console.log('Formulario 3 inválido');
+    }
   }
 }

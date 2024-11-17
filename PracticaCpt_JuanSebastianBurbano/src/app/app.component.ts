@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { Form1Component } from './form1/form1.component';
 import { Form2Component } from './form2/form2.component';
 import { Form3Component } from "./form3/form3.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Form1Component, Form2Component, Form3Component],
+  imports: [RouterOutlet, Form1Component, Form2Component, Form3Component, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
