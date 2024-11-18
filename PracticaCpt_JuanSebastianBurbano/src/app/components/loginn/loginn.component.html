@@ -1,0 +1,40 @@
+<div class="p-fluid">
+    <br>
+    <br>
+    <h2 class="form-title" style="display: flex; justify-content:center">LOGIN</h2>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="p-field" style="display:flex;">
+            <div class="flex-col" style="flex: 1;">
+                <label for="lastName">Apellido</label>
+                <input id="lastName" type="text" pInputText formControlName="lastName"
+                style="margin-top: 8px; display: block;"/>
+                <div *ngIf="userForm.controls['lastName'].invalid && 
+                userForm.controls['lastName'].touched" class="error">
+                    Apellido es requerido
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="p-field">
+            <label for="email" style="margin-bottom: 8px; display: block;">Correo electrónico</label>
+            <span class="p-input-icon-left">
+                <i class="pi pi-envelope"></i>
+                <input id="email" type="text" pInputText formControlName="email"/>
+            </span>
+            <div *ngIf="userForm.controls['email'].invalid && 
+            userForm.controls['email'].touched" class="error">
+                Email Requerido
+            </div>
+        </div> 
+        <br>
+        <div style="display: flex; justify-content: center;">
+            <button pButton type="submit" label="Ingresar" 
+                    [disabled]="userForm.invalid" 
+                    style="width: auto; padding: 0.7em 1.5em; max-width: 150px; height: 45px; text-align: center;">
+            </button>
+        </div>
+
+      </form>
+
+</div>
+

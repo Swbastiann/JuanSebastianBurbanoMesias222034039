@@ -13,26 +13,19 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  loginForm1(name: string, lastname:string, email:string, tel:string):Observable<any>{
-    const body = { name, lastname, email, tel};
+  loginn(lastname:string, email:string):Observable<any>{
+    const body = { lastname, email };
 
 
-    return this.http.post(`${this.apiUrl}/login/form1`, body) 
-
-  }
-
-  loginForm2(nameg: string, emaill:string):Observable<any>{
-    const body = { nameg, emaill};
-
-
-    return this.http.post(`${this.apiUrl}/login/form2`, body) 
+    return this.http.post(`${this.apiUrl}/login`, body) 
 
   }
 
-  loginForm3(start: Date, end:Date, note:string):Observable<any>{
-    
-    const body = { start, end, note };
-    return this.http.post(`${this.apiUrl}/login/form3`, body);
-
+  register(name: string, lastname: string, email: string, tel: string,
+    nameg: string, emaill:string,
+    start: Date, end: Date, note: string): Observable<any> {
+    const body = { name, lastname, email, tel, nameg, emaill,start, end, note };
+    return this.http.post(`${this.apiUrl}/register`, body);
   }
+
 }
