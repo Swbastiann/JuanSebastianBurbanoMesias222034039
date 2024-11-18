@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\api_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\api_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|c:\\users\\sebastian\\universidad\\trabajos\\6to semestre\\computacion gr\u00E1fica\\clases\\api\\api_backend\\api_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE56B79D-46F4-43D6-AA4F-4C0CB75D87CB}|Api_Backend\\Api_Backend.csproj|solutionrelative:api_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Api_Backend\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Api_Backend\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T06:10:33.044Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Users.cs",
+              "RelativeDocumentMoniker": "Api_Backend\\Users.cs",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Users.cs",
+              "RelativeToolTip": "Api_Backend\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T06:07:56.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Api_Backend\\Program.cs",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Program.cs",
+              "RelativeToolTip": "Api_Backend\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T04:55:07.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Api_Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\appsettings.json",
+              "RelativeToolTip": "Api_Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-16T04:55:18.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Api_Backend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\appsettings.Development.json",
+              "RelativeToolTip": "Api_Backend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-16T04:55:17.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Api_Backend.csproj",
+              "DocumentMoniker": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Api_Backend.csproj",
+              "RelativeDocumentMoniker": "Api_Backend\\Api_Backend.csproj",
+              "ToolTip": "C:\\Users\\Sebastian\\UNIVERSIDAD\\TRABAJOS\\6TO SEMESTRE\\COMPUTACION GR\u00C1FICA\\CLASES\\API\\Api_Backend\\Api_Backend\\Api_Backend.csproj",
+              "RelativeToolTip": "Api_Backend\\Api_Backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-16T04:52:35.88Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

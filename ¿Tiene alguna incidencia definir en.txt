@@ -1,0 +1,3 @@
+¿Tiene alguna incidencia definir en la base de datos los campos de fecha como tipo DATE o como varchar al momento de enviar la peticion?
+
+Si existen diferencias, ya que si bien el definir las fechas como tipo date en la base de datos funciona, a la hora de conectar el front-end con el back-end, y este con la base de datos, hay un problema, ya que los atributos no están definidos de la misma forma. Ademas puede causar confusiones al usuario ya que él puede digitar en un orden distinto al que se tiene en los componentes, por lo que al definir los parámetros como tipo DATE es mucho mas funcional ya que el usuario solo debe completar la casilla y automáticamente, tanto front como back y como la base de datos podrán procesar de la misma manera los campos de las fechas.
