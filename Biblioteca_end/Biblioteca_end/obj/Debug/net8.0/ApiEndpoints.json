@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "Biblioteca_end.Controllers.UsersController",
+    "Method": "Delete",
+    "RelativePath": "api/Users/delete/{isbn}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.UsersController",
+    "Method": "GetBooks",
+    "RelativePath": "api/Users/getBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/Users/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "Biblioteca_end.Libros",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
