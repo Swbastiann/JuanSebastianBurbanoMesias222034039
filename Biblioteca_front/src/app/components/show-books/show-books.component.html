@@ -1,11 +1,14 @@
 <div class="container">
-    <h2>Lista de Libros</h2>
-    
-    <div *ngIf="errorMessage" class="alert alert-danger">
-      {{ errorMessage }}
-    </div>
-  
-    <table *ngIf="books.length > 0" class="table table-striped">
+  <h2>Lista de Libros</h2>
+
+  <!-- Mensaje de error -->
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+
+  <!-- Tabla de libros -->
+  <div *ngIf="books.length > 0" class="table-container">
+    <table class="table">
       <thead>
         <tr>
           <th>ISBN</th>
@@ -26,13 +29,13 @@
           <td>{{ book.genero }}</td>
           <td>{{ book.cantidad }}</td>
           <td>{{ book.anio_publicacion | date:'yyyy' }}</td>
-<!-- Formato de año -->
         </tr>
       </tbody>
     </table>
-  
-    <div *ngIf="books.length === 0" class="alert alert-info">
-      No hay libros disponibles.
-    </div>
   </div>
-  
+
+  <!-- Mensaje cuando no hay libros -->
+  <div *ngIf="books.length === 0" class="alert alert-info">
+    No hay libros disponibles.
+  </div>
+</div>

@@ -4,12 +4,15 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';  
+import { CalendarModule } from 'primeng/calendar';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 
 @Component({
   selector: 'app-register-book',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, CalendarModule, InputTextModule, ButtonModule],
   templateUrl: './register-book.component.html',
   styleUrl: './register-book.component.css'
 })
@@ -55,9 +58,5 @@ export class RegisterBookComponent {
       this.registerForm.markAllAsTouched();
     }
   }
-  
-  
-  
-  
   
 }

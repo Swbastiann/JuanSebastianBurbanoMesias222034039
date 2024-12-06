@@ -5,7 +5,12 @@
         <label for="isbn">ISBN:</label>
         <input id="isbn" formControlName="isbn" type="text" placeholder="Ingrese ISBN" />
       </div>
-      <button type="submit" [disabled]="buscarForm.invalid">Buscar Libro</button>
+      <div style="display: flex; justify-content: center;">
+        <button pButton type="submit" label="Buscar Libro" 
+                [disabled]="buscarForm.invalid" 
+                style="width: auto">
+        </button>
+      </div>
     </form>
   
     <div *ngIf="libroEncontrado">

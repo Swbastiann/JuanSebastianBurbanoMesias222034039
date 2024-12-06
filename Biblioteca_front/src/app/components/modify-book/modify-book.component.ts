@@ -4,11 +4,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterService } from '../../services/register.service'; // Ajusta la ruta si es necesario
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-modify-book',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, ButtonModule],
   templateUrl: './modify-book.component.html',
   styleUrls: ['./modify-book.component.css']
 })

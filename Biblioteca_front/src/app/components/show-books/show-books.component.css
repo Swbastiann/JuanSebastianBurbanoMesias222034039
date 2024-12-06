@@ -1,0 +1,86 @@
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del título */
+h2 {
+  font-size: 28px;
+  color: #1a5e9b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo de la tabla */
+.table {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Estilo de las celdas */
+.table th, .table td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Estilo de los encabezados */
+.table th {
+  background-color: #2342;
+  color: #fff;
+}
+
+/* Estilo de las filas */
+.table td {
+  background-color: #f9f9f9;
+}
+
+/* Alternancia de colores en las filas */
+.table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+/* Estilo de las alertas */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Estilo de alerta de error */
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Estilo de alerta de información */
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+/* Espaciado adicional para los contenedores */
+.table-container, .alert {
+  margin-bottom: 20px;
+}
+
+/* Hover en filas */
+.table tr:hover {
+  background-color: #e6f1ff;
+}
