@@ -33,17 +33,29 @@ export class RegisterBookComponent {
   onSubmit() {
     if (this.registerForm.valid) {
       const formData = this.registerForm.value;
-      const year = formData.year;
-      formData.year = new Date(year, 0, 1).toISOString(); // Convierte el año a formato ISO 8601
+      const libro = {
+        Isbn: formData.isbn,
+        Titulo: formData.title,
+        Autor: formData.author,
+        Editorial: formData.editorial,
+        Genero: formData.genre,
+        Cantidad: formData.quantity,
+        Año_publicacion: new Date(formData.year, 0, 1).toISOString()
+      };
   
-      this.registerService.registerBook(formData).subscribe(response => {
+      this.registerService.registerBook(libro).subscribe(response => {
         console.log("Exitoso", response);
+        this.router.navigate(['/']); 
+      }, error => {
+        console.error("Error al registrar el libro:", error);
       });
-      console.log('Formulario Enviado', formData);
+  
+      console.log('Formulario Enviado', libro);
     } else {
       this.registerForm.markAllAsTouched();
     }
   }
+  
   
   
   

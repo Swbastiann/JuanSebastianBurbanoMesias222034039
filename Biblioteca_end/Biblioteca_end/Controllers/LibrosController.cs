@@ -10,7 +10,7 @@ namespace Biblioteca_end.Controllers
     [ApiController]
     public class LibrosController : ControllerBase
     {
-        private readonly string _connectionString = "Server=LAPTOP-LFA03L5H\\MSSQLSERVER01;Database=Biblioteca;User Id=sa;Password=12345678;TrustServerCertificate=true";
+        private readonly string _connectionString = "Server=MG3\\MSSQLSERVER1;Database=Biblioteca;User Id=sa;Password=12345678;TrustServerCertificate=true";
 
         //Registrar
         [HttpPost("Register")]

@@ -1,0 +1,44 @@
+<div class="modify-book">
+    <!-- Formulario para buscar por ISBN -->
+    <form [formGroup]="buscarForm" (ngSubmit)="verificarLibro()">
+      <div>
+        <label for="isbn">ISBN:</label>
+        <input id="isbn" formControlName="isbn" placeholder="Ingrese el ISBN del libro" />
+        <button type="submit">Buscar</button>
+      </div>
+      <div *ngIf="mensajeError" class="error">{{ mensajeError }}</div>
+    </form>
+  
+    <!-- Formulario para modificar libro -->
+    <div *ngIf="libroEncontrado">
+      <h2>Modificar libro</h2>
+      <form [formGroup]="modificarForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="Titulo">Título:</label>
+          <input id="Titulo" formControlName="Titulo" />
+        </div>
+        <div>
+          <label for="Autor">Autor:</label>
+          <input id="Autor" formControlName="Autor" />
+        </div>
+        <div>
+          <label for="Editorial">Editorial:</label>
+          <input id="Editorial" formControlName="Editorial" />
+        </div>
+        <div>
+          <label for="Genero">Género:</label>
+          <input id="Genero" formControlName="Genero" />
+        </div>
+        <div>
+          <label for="Cantidad">Cantidad:</label>
+          <input id="Cantidad" type="number" formControlName="Cantidad" />
+        </div>
+        <div>
+          <label for="Año_publicacion">Año de publicación:</label>
+          <input id="Año_publicacion" formControlName="Año_publicacion" />
+        </div>
+        <button type="submit">Guardar Cambios</button>
+      </form>
+    </div>
+  </div>
+  
