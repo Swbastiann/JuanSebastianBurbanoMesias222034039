@@ -1,10 +1,14 @@
 <div class="container">
+  <h2>Buscar Libro</h2>
     <form [formGroup]="buscarForm" (ngSubmit)="verificarLibro()">
-      <div class="form-group">
-        <label for="isbn">Ingrese el ISBN del libro:</label>
-        <input id="isbn" type="text" formControlName="isbn" class="form-control" />
+      <div>
+        <label for="isbn">ISBN:</label>
+        <input id="isbn" formControlName="isbn" type="text" placeholder="Ingrese ISBN" />
       </div>
-      <button type="submit" class="btn btn-primary" [disabled]="buscarForm.invalid">Buscar</button>
+      <div style="display: flex; justify-content: center;">
+        <button pButton type="submit" label="Buscar Libro" [disabled]="buscarForm.invalid" style="width: auto">
+        </button>
+      </div>
     </form>
   
     <div *ngIf="libroEncontrado" class="mt-4">

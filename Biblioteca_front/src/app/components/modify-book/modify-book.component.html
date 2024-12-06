@@ -1,10 +1,17 @@
 <div class="modify-book">
     <!-- Formulario para buscar por ISBN -->
+    <h2>Modificar Libro</h2>
     <form [formGroup]="buscarForm" (ngSubmit)="verificarLibro()">
-      <div>
+      <div class="form-group">
         <label for="isbn">ISBN:</label>
         <input id="isbn" formControlName="isbn" placeholder="Ingrese el ISBN del libro" />
-        <button type="submit">Buscar</button>
+      </div>
+  
+      <div style="display: flex; justify-content: center;">
+        <button pButton type="submit" label="Buscar Libro" 
+                [disabled]="buscarForm.invalid" 
+                style="width: auto">
+        </button>
       </div>
       <div *ngIf="mensajeError" class="error">{{ mensajeError }}</div>
     </form>
@@ -13,31 +20,39 @@
     <div *ngIf="libroEncontrado">
       <h2>Modificar libro</h2>
       <form [formGroup]="modificarForm" (ngSubmit)="onSubmit()">
-        <div>
+        <div class="form-group">
           <label for="Titulo">Título:</label>
           <input id="Titulo" formControlName="Titulo" />
         </div>
-        <div>
+  
+        <div class="form-group">
           <label for="Autor">Autor:</label>
           <input id="Autor" formControlName="Autor" />
         </div>
-        <div>
+  
+        <div class="form-group">
           <label for="Editorial">Editorial:</label>
           <input id="Editorial" formControlName="Editorial" />
         </div>
-        <div>
+  
+        <div class="form-group">
           <label for="Genero">Género:</label>
           <input id="Genero" formControlName="Genero" />
         </div>
-        <div>
+  
+        <div class="form-group">
           <label for="Cantidad">Cantidad:</label>
           <input id="Cantidad" type="number" formControlName="Cantidad" />
         </div>
-        <div>
+  
+        <div class="form-group">
           <label for="Año_publicacion">Año de publicación:</label>
           <input id="Año_publicacion" formControlName="Año_publicacion" />
         </div>
-        <button type="submit">Guardar Cambios</button>
+  
+        <div style="display: flex; justify-content: center;">
+          <button type="submit">Guardar Cambios</button>
+        </div>  
       </form>
     </div>
   </div>
