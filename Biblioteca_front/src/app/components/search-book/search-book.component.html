@@ -1,0 +1,24 @@
+<div class="container">
+    <form [formGroup]="buscarForm" (ngSubmit)="verificarLibro()">
+      <div class="form-group">
+        <label for="isbn">Ingrese el ISBN del libro:</label>
+        <input id="isbn" type="text" formControlName="isbn" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="buscarForm.invalid">Buscar</button>
+    </form>
+  
+    <div *ngIf="libroEncontrado" class="mt-4">
+      <h3>Detalles del libro encontrado:</h3>
+      <p><strong>Título:</strong> {{ libro.titulo }}</p>
+      <p><strong>Autor:</strong> {{ libro.autor }}</p>
+      <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
+      <p><strong>Género:</strong> {{ libro.genero }}</p>
+      <p><strong>Cantidad:</strong> {{ libro.cantidad }}</p>
+      <p><strong>Año de publicación:</strong> {{ libro.anio_publicacion }}</p>
+    </div>
+  
+    <div *ngIf="mensajeError" class="alert alert-danger mt-4">
+      {{ mensajeError }}
+    </div>
+  </div>
+  

@@ -10,7 +10,7 @@ namespace Biblioteca_end.Controllers
     [ApiController]
     public class LibrosController : ControllerBase
     {
-        private readonly string _connectionString = "Server=LAPTOP-LFA03L5H\\MSSQLSERVER01;Database=Biblioteca;User Id=sa;Password=12345678;TrustServerCertificate=true";
+        private readonly string _connectionString = "Server=MG3\\MSSQLSERVER1;Database=Biblioteca;User Id=sa;Password=12345678;TrustServerCertificate=true";
 
         //Registrar
         [HttpPost("Register")]
@@ -115,6 +115,81 @@ namespace Biblioteca_end.Controllers
             {
                 // Si hay un error, devolvemos un mensaje de error
                 return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        //Actualizar informacion del libro
+        [HttpPut("update/{isbn}")]
+        public IActionResult Update(string isbn, [FromBody] Libros libro)
+        {
+            if (libro == null)
+            {
+                return BadRequest(new { status = "error", message = "Invalid data." });
+            }
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                //Verificar si el libro existe
+                var sql = "SELECT COUNT(*) FROM Libros WHERE isbn = @Isbn";
+                var bookExists = connection.ExecuteScalar<int>(sql, new { Isbn = isbn }) > 0;
+
+                if (!bookExists)
+                {
+                    return NotFound(new { status = "error", message = "Book not found." });
+                }
+                //Actualizar
+                var sqlUpdate = @"UPDATE Libros SET titulo = @Titulo, autor = @Autor, editorial = @Editorial, genero = @Genero, 
+                                año_publicacion = @Año_publicacion WHERE isbn = @Isbn";
+                var rowsAffected = connection.Execute(sqlUpdate, new { Isbn = isbn, libro.Titulo, libro.Autor, libro.Editorial, libro.Genero, libro.Año_publicacion });
+
+                if (rowsAffected > 0)
+                {
+                    return Ok(new { status = "success", message = "Book updated successfully." });
+                }
+                else
+                {
+                    return StatusCode(500, new { status = "error", message = "Error updating book." });
+                }
+            }
+        }
+
+        // Actualizar cantidad
+        [HttpPatch("updateQuantity/{isbn}")]
+        public IActionResult UpdateQuantity(string isbn, [FromBody] int ajuste)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                // Verifica si el libro existe
+                var sql = "SELECT COUNT(*) FROM Libros WHERE isbn = @Isbn";
+                var bookExists = connection.ExecuteScalar<int>(sql, new { Isbn = isbn }) > 0;
+
+                if (!bookExists)
+                {
+                    return NotFound(new { status = "error", message = "Book not found." });
+                }
+                // Cantidad actual del libro
+                var sqlQuantity = "SELECT cantidad FROM Libros WHERE isbn = @Isbn";
+                var currentQuantity = connection.ExecuteScalar<int>(sqlQuantity, new { Isbn = isbn });
+                var newQuantity = currentQuantity + ajuste;
+
+
+                // Verifica que la nueva cantidad no sea negativa
+                if (newQuantity < 0)
+                {
+                    return BadRequest(new { status = "error", message = "Quantity cannot be negative." });
+                }
+
+                // Actualiza la cantidad en la base de datos
+                var sqlUpdate = "UPDATE Libros SET cantidad = @NewQuantity WHERE isbn = @Isbn";
+                var rowsAffected = connection.Execute(sqlUpdate, new { NewQuantity = newQuantity, Isbn = isbn });
+
+                if (rowsAffected > 0)
+                {
+                    return Ok(new { status = "success", message = "Quantity updated successfully.", newQuantity });
+                }
+                else
+                {
+                    return StatusCode(500, new { status = "error", message = "Error updating quantity." });
+                }
             }
         }
     }

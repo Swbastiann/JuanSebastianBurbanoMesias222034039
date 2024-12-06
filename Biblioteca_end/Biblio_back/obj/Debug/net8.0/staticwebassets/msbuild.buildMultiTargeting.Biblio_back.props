@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Biblio_back.props" />
-</Project>

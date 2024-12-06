@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Lista de Libros</h2>
+    
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      {{ errorMessage }}
+    </div>
+  
+    <table *ngIf="books.length > 0" class="table table-striped">
+      <thead>
+        <tr>
+          <th>ISBN</th>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Editorial</th>
+          <th>Género</th>
+          <th>Cantidad</th>
+          <th>Año de Publicación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.titulo }}</td>
+          <td>{{ book.autor }}</td>
+          <td>{{ book.editorial }}</td>
+          <td>{{ book.genero }}</td>
+          <td>{{ book.cantidad }}</td>
+          <td>{{ book.anio_publicacion | date:'yyyy' }}</td>
+<!-- Formato de año -->
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="books.length === 0" class="alert alert-info">
+      No hay libros disponibles.
+    </div>
+  </div>
+  
