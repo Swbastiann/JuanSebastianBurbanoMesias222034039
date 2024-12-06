@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #7ab0d4;
+}
+
+* {
+    font-family: 'Funnel Display', sans-serif;
+  }
+
+ /* Estilo global para los inputs */
+input, textarea, select {
+    border: 1px solid #2342;  /* Bordes con color #2342 */
+    border-radius: 4px;  /* Bordes redondeados */
+    padding: 8px 12px;  /* Espaciado dentro de los campos */
+    font-size: 14px;  /* Tamaño de fuente */
+    margin: 15px;
+    width: 90%;  /* Asegura que los inputs ocupen todo el ancho disponible */
+    box-sizing: border-box;  /* Para que el padding no afecte el ancho total */
+    background-color: #2342;  /* Fondo interior del input */
+    color: #000;  /* Color del texto en el input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;  /* Animación suave al enfocar */
+  }
+  
+  /* Estilo al enfocar el input */
+  input:focus, textarea:focus, select:focus {
+    border-color: #2342;  /* Cambio de color de borde al enfocar */
+    outline: none;  /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 5px #23422a80;  /* Sombra al enfocar */
+    background-color: #2342;  /* Fondo blanco al enfocar */
+  }
+  
+  /* Estilo de los placeholders (texto por defecto dentro del input) */
+  input::placeholder, textarea::placeholder {
+    color: #000;  /* Color del texto placeholder */
+  }
+  
