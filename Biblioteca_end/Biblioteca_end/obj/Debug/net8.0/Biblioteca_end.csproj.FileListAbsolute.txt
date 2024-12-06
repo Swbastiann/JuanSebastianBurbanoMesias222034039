@@ -67,3 +67,6 @@ C:\Users\Sebastian\UNIVERSIDAD\TRABAJOS\6TO SEMESTRE\COMPUTACION GRÁFICA\CLASES
 C:\Users\Sebastian\UNIVERSIDAD\TRABAJOS\6TO SEMESTRE\COMPUTACION GRÁFICA\CLASES\API\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\Biblioteca_end.pdb
 C:\Users\Sebastian\UNIVERSIDAD\TRABAJOS\6TO SEMESTRE\COMPUTACION GRÁFICA\CLASES\API\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\Biblioteca_end.genruntimeconfig.cache
 C:\Users\Sebastian\UNIVERSIDAD\TRABAJOS\6TO SEMESTRE\COMPUTACION GRÁFICA\CLASES\API\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\ref\Biblioteca_end.dll
+C:\Users\bddmr\OneDrive\Documents\trabajo final\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\Biblioteca_end.dll
+C:\Users\bddmr\OneDrive\Documents\trabajo final\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\refint\Biblioteca_end.dll
+C:\Users\bddmr\OneDrive\Documents\trabajo final\Biblioteca_end\Biblioteca_end\obj\Debug\net8.0\Biblioteca_end.pdb

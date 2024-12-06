@@ -1,0 +1,32 @@
+<h2>Registrar Libro</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Título</label>
+    <input id="title" formControlName="title" />
+  </div>
+  <div>
+    <label for="author">Autor</label>
+    <input id="author" formControlName="author" />
+  </div>
+  <div>
+    <label for="year">Año</label>
+    <input id="year" formControlName="year" type="number" />
+  </div>
+  <div>
+    <label for="isbn">ISBN</label>
+    <input id="isbn" formControlName="isbn" />
+  </div>
+  <div>
+    <label for="editorial">Editorial</label>
+    <input id="editorial" formControlName="editorial" />
+  </div>
+  <div>
+    <label for="genre">Género</label>
+    <input id="genre" formControlName="genre" />
+  </div>
+  <div>
+    <label for="quantity">Cantidad</label>
+    <input id="quantity" formControlName="quantity" type="number" />
+  </div>
+  <button type="submit" [disabled]="registerForm.invalid">Registrar</button>
+</form>
