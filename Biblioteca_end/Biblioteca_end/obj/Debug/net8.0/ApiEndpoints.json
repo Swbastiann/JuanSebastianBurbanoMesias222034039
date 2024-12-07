@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "Delete",
+    "RelativePath": "api/Libros/delete/{isbn}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "GetBooks",
+    "RelativePath": "api/Libros/getBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "GetByIsbn",
+    "RelativePath": "api/Libros/getByIsbn/{isbn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "Register",
+    "RelativePath": "api/Libros/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "Biblioteca_end.Libros",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "Update",
+    "RelativePath": "api/Libros/update/{isbn}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "libro",
+        "Type": "Biblioteca_end.Libros",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Biblioteca_end.Controllers.LibrosController",
+    "Method": "UpdateQuantity",
+    "RelativePath": "api/Libros/updateQuantity/{isbn}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "ajuste",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
